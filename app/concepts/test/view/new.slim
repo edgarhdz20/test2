@@ -1,0 +1,14 @@
+.row.new
+  h1 New Post
+
+  = simple_form_for model do |f|
+    .row
+      .col-sm-12
+        = f.input :name, placeholder: "Title", label: false
+    .row
+      .col-sm-12
+        = f.input :age, placeholder: "Say it out loud!", label: false
+    .row
+      .col-sm-12
+        = f.submit 'Create Post'
+
